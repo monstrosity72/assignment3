@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta http-equiv="refresh" content="3">-->	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+    <title>User Panel</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body style="background-image: url(images/maxresdefault.jpg);">
+	<header>
+		<h1>This is the user panel</h1>
+		<h2>You can fill out the form below to take appointment for your car repair/part change.</h2>
+
+		
+		<form name= "appointment_form" action="dbinsert.php" method="POST">
+			<label for="fname">Name:</label><br>
+ 			<input type="text" id="username" name="username" placeholder="Name" required pattern="^[A-Za-z0-9 ]+$" maxlength="50"><br>
+  			<label for="lname">Address:</label><br>
+  			<input type="text" id="address" name="address" placeholder="Address" required maxlength="50"><br>
+   			<label for="fname">Phone number:</label><br>
+		    <input type="text" id="phone" name="phone" placeholder="01723******" required pattern="[0-9]{11}"  maxlength="11"><br>
+		    <label for="lname">Car License Number:</label><br>
+		    <input type="text" id="license" name="license" placeholder="123456" required pattern={6} maxlength="6"><br>
+		    <label for="fname">Car Engine Number:</label><br>
+		    <input type="text" id="enginenumber" name="enginenumber" placeholder="ABXY1234" required pattern={6} maxlength="6"><br>
+		    <label for="date">Appointment Date:</label><br>
+		    <input type="date" id="dates" name="dates" required><br>
+
+		    <label for="fname">Select Desired Mechanic:</label><br>
+
+		    <select id="mechanic" name="mechanic" required="required">
+		    <option value="">Pick desired mechanic</option>
+		    <option value="Kamrul">Kamrul</option>
+		    <option value="Pallab">Pallab</option>
+		    <option value="Rafiul">Rafiul</option>
+		    <option value="Joven">Joven</option>
+		    <option value="Durjoy">Durjoy</option>
+  			</select>
+ 			<br>
+ 			<input style="padding: 8px; margin-top: 10px; background-color: #d98880;" type="submit" id="btn" value="Make Appointment">
+		</form>
+	</header>
+</body>
+
+</html>
