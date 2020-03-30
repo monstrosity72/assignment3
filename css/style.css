@@ -1,0 +1,15 @@
+header{
+	background-color:  #73c6b6;
+	margin: 0 auto;
+	margin-top: 300px;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	width: 40%;
+	border-radius: 15px;
+	border-color:  #17202a;
+	border-style: groove;
+	border-width: 5px;
+	font-family: sans-serif;
+}
